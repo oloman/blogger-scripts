@@ -1,0 +1,23 @@
+ul.bsitemap, ul.bsitemap ul, ul.bsitemap li {margin: 0 !important;padding: 0 !important;list-style:none !important;}
+ul.bsitemap {list-style: none;width: 100%;margin: 0 auto !important;border-top: 1px solid #333;}
+/* Colores lista principal */
+ul.bsitemap a {display: block;padding: 10px;border-bottom: 1px solid #333;background: transparent;color: #333;text-decoration: none;font-size: 16px;line-height: 16px;text-transform: uppercase;}
+ul.bsitemap li:before {content: none;}
+/* Colores lista principal con hover */
+ul.bsitemap li:hover a {background: #333;color: #eee;}
+/* Colores opcion lista principal seleccionada */
+ul.bsitemap li.desplegable.activa {background: #eee;}
+/* Símbolo elemento normal */
+ul.bsitemap li a:before {content: "\25CF\00A0 ";width: 28px;display: inline-block;vertical-align: top;}
+/* Símbolo elemento desplegable cerrado */
+ul.bsitemap li.desplegable a:before {content: "\25BA\00A0";}
+/* Símbolo elemento desplegable abierto */
+ul.bsitemap li.desplegable.activa a:before {content: "\25BC\00A0 ";}
+ul.bsitemap li.desplegable ul li a:before, ul.bsitemap li.desplegable.activa ul li a:before {content: none;}
+ul.bsitemap ul {display: none;width: 100%;}
+/* Sangrado y colores para sub-opciones */
+ul.bsitemap ul a {padding-left: 40px !important;text-transform: none;}
+/* Colores para sub-opciones con hover */
+ul.bsitemap li:hover li a:hover {background: #eee;color: #333;}
+/* Estilo marca NUEVO */
+.bnuevo {color: red;font-style: italic;font-weight: bold;}
